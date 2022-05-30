@@ -34,10 +34,10 @@
               "src/assets"
             ],
             "styles": [
-
-              "src/styles.scss",
               "src/assets/scss/icons/flag-icon-css/flag-icon.min.css",
-              "/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css"
+              "src/assets/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css",
+              "src/assets/css/animate.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
