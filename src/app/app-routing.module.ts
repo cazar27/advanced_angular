@@ -6,14 +6,12 @@ import { NotFoundComponent } from './content/not-found/not-found.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AuthMainComponent } from './auth/auth-main/auth-main.component';
 
-
 const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
     loadChildren: () => import('./pages/pages.routing.module').then(m => m.PagesRoutingModule)
   },
-
   {
     path: 'auth',
     component: AuthMainComponent,

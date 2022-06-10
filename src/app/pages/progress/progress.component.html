@@ -1,1 +1,49 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="progress">
+                    <div class="progress-bar bg-info progress-bar-striped active" role="progressbar" [style.width]="getPercentProgress()" style="height:10px;"><span class="sr-only">{{getPercentProgress()}} Complete</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="input-group">
+                    <span class="input-group-btn" (click)="changePercentProgress(-5)">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-minus"></i></button>
+                    </span>
+
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Product name"
+                        type="number"
+                        [(ngModel)]="progress"
+                    >
+                    
+                    <span class="input-group-btn" (click)="changePercentProgress(5)">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                 
+
+            </div>
+        </div>
+    </div>
+</div>
