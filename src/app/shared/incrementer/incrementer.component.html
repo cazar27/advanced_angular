@@ -3,7 +3,14 @@
     <button class="btn" [ngClass]="btnClass" type="button"><i class="fa fa-minus"></i></button>
   </span>
 
-  <input type="text" class="form-control" placeholder="Product name" type="number" [(ngModel)]="progress">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Progress"
+    type="number"
+    [ngClass]="{'is-invalid': invalid}"
+    [(ngModel)]="progress"
+    (ngModelChange)="onChange($event)">
 
   <span class="input-group-btn" (click)="changePercentProgress(5)">
     <button class="btn" [ngClass]="btnClass" type="button"><i class="fa fa-plus"></i></button>
