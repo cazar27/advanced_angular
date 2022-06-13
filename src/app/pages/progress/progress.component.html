@@ -33,7 +33,11 @@
         <div class="card">
             <div class="card-body">
 
-              <app-incrementer [btnClass]="'btn-info'" (changePercent)="progress1 = $event" [progress]="progress1"></app-incrementer>
+              <app-incrementer
+                [btnClass]="'btn-info'"
+                (changePercent)="progress1 = $event"
+                [progress]="progress1"
+              ></app-incrementer>
 
             </div>
         </div>
@@ -42,7 +46,11 @@
         <div class="card">
             <div class="card-body">
 
-              <app-incrementer [btnClass]="'btn-danger'" (changePercent)="progress2 = $event" [progress]="progress2"></app-incrementer>
+              <app-incrementer
+                [btnClass]="'btn-danger'"
+                (changePercent)="progress2 = $event"
+                [progress]="progress2"
+              ></app-incrementer>
 
             </div>
         </div>

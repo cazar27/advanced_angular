@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./progress.component.scss']
 })
 export class ProgressComponent {
-  public progress1 :number = 35;
-  public progress2 :number = 85;
+  public progress1: number = 35;
+  public progress2: number = 85;
 
-  public getPercentProgress(value: number) : string {
+  public getPercentProgress(value: number): string {
     return value + '%';
   }
 

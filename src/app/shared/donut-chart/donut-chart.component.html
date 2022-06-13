@@ -1,0 +1,10 @@
+<div style="display: block">
+  <h3>{{title}}</h3>
+
+  <canvas
+    *ngIf="dataChart.datasets.length"
+    baseChart
+    [data]="dataChart"
+    type="doughnut">
+  </canvas>
+</div>

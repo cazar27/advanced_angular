@@ -17,7 +17,7 @@ import { SympleChartComponent } from './symple-chart/symple-chart.component';
     DashboardComponent,
     UserProfileComponent,
     ProgressComponent,
-    SympleChartComponent
+    SympleChartComponent,
   ],
   exports: [
     MainPageComponent,
