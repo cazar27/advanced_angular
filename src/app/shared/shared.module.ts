@@ -9,13 +9,17 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { IncrementerComponent } from './incrementer/incrementer.component';
 import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 @NgModule({
   declarations: [
     BreadcrumbsComponent,
     SidebarComponent,
     HeaderComponent,
     IncrementerComponent,
-    DonutChartComponent
+    DonutChartComponent,
+    LineChartComponent,
+    BarChartComponent
   ],
   exports: [
     BreadcrumbsComponent,

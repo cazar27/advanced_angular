@@ -10,6 +10,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SympleChartComponent } from './symple-chart/symple-chart.component';
+import { LineChartsComponent } from './line-charts/line-charts.component';
+import { BarChartsComponent } from './bar-charts/bar-charts.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { SympleChartComponent } from './symple-chart/symple-chart.component';
     UserProfileComponent,
     ProgressComponent,
     SympleChartComponent,
+    LineChartsComponent,
+    BarChartsComponent,
   ],
   exports: [
     MainPageComponent,
