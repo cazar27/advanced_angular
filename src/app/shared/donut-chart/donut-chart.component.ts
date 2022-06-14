@@ -8,9 +8,9 @@ import { ChartData, Color } from 'chart.js';
 })
 export class DonutChartComponent implements OnInit {
 
-  @Input('title') public title: string = '';
-  @Input('data') public data: number[] = [];
-  @Input('labels') public labels: string[] = [];
+  @Input('title') public title: string = 'Title';
+  @Input('data') public data: number[] = [ 250, 150, 500 ];
+  @Input('labels') public labels: string[] = [ 'Label 1', 'Label 2', 'Label 3' ];
   @Input('colorsBg') public colorsBg: Color[] = ['#ccc','#eee','#aaa'];
   @Input('colorsHover') public colorsHover: Color[] = ['#ccc','#eee','#aaa'];
   @Input('colorsBorderHover') public colorsBorderHover: Color[] = ['#fff','#fff','#fff' ];
@@ -18,24 +18,21 @@ export class DonutChartComponent implements OnInit {
     datasets: []
   };
 
-
-  constructor() { }
-
   ngOnInit(): void {
 
-    console.table(this.colorsBg);
-
-    this.dataChart = {
-      labels: this.labels,
-      datasets: [
-        {
-          data: this.data,
-          backgroundColor: this.colorsBg,
-          hoverBackgroundColor: this.colorsHover,
-          hoverBorderColor: this.colorsBorderHover,
-        },
-      ]
-    };
+    if(this.data.length > 0) {
+      this.dataChart = {
+        labels: this.labels,
+        datasets: [
+          {
+            data: this.data,
+            backgroundColor: this.colorsBg,
+            hoverBackgroundColor: this.colorsHover,
+            hoverBorderColor: this.colorsBorderHover,
+          },
+        ]
+      };
+    }
 
   }
 

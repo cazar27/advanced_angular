@@ -1,1 +1,28 @@
-<p>line-charts works!</p>
+
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-line-chart
+          [title]="title1"
+          [datasets]="dataset1"
+          [labels]="labels1"
+        ></app-line-chart>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-line-chart
+          [title]="title2"
+          [datasets]="dataset2"
+          [labels]="labels2"
+        ></app-line-chart>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -26,7 +26,9 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     SidebarComponent,
     HeaderComponent,
     IncrementerComponent,
-    DonutChartComponent
+    DonutChartComponent,
+    LineChartComponent,
+    BarChartComponent
   ],
   imports: [
     CommonModule,
