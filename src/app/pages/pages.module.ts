@@ -12,6 +12,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { SympleChartComponent } from './symple-chart/symple-chart.component';
 import { LineChartsComponent } from './line-charts/line-charts.component';
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
+import { PagesComponent } from './pages.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import { BarChartsComponent } from './bar-charts/bar-charts.component';
     SympleChartComponent,
     LineChartsComponent,
     BarChartsComponent,
+    AcountSettingsComponent,
+    PagesComponent,
   ],
   exports: [
     MainPageComponent,
     DashboardComponent,
     UserProfileComponent,
     ProgressComponent,
-    SympleChartComponent
+    SympleChartComponent,
+    AcountSettingsComponent
   ],
   imports: [
     CommonModule,

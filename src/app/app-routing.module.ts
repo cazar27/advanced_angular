@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { NotFoundComponent } from './content/not-found/not-found.component';
 
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AuthMainComponent } from './auth/auth-main/auth-main.component';
+import { PagesComponent } from './pages/pages.component';
 
 const routes: Routes = [
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    component: PagesComponent,
     loadChildren: () => import('./pages/pages.routing.module').then(m => m.PagesRoutingModule)
   },
   {

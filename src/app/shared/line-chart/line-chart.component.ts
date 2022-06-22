@@ -54,8 +54,6 @@ export class LineChartComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    console.table(this.data.length);
-
     if(this.data.length > 0) {
       this.lineChartData = {
         datasets: this.data,

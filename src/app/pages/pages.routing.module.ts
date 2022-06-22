@@ -7,6 +7,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { SympleChartComponent } from './symple-chart/symple-chart.component';
 import { LineChartsComponent } from './line-charts/line-charts.component';
 import { BarChartsComponent } from './bar-charts/bar-charts.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'bar-charts',
     component: BarChartsComponent,
+  },
+  {
+    path: 'account-settings',
+    component: AcountSettingsComponent,
   },
   {
     path: '',

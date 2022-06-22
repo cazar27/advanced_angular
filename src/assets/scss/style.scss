@@ -17,17 +17,16 @@ File: scss
  *	8. Custom Templates
  */
 
- @import './../../assets/plugins/bootstrap/css/bootstrap.scss';
- @import './variable';
- @import './app';
- @import './sidebar';
+@import './../../assets/plugins/bootstrap/css/bootstrap.scss';
+@import './variable';
+@import './app';
+@import './sidebar';
 @import './pages/pages';
 @import '../scss/icons/font-awesome/scss/font-awesome.scss';
 @import '../scss/icons/simple-line-icons/scss/simple-line-icons.scss';
 @import '../scss/icons/weather-icons/sass/weather-icons.scss';
 @import '../scss/icons/linea-icons/linea.scss';
 @import '../scss/icons/themify-icons/themify-icons.scss';
-@import '../scss/colors/default-dark.scss';
 
 // @import '../scss/icons/flag-icon-css/flag-icon.min.css';
 // @import "../scss/icons/material-design-iconic-font/css/materialdesignicons.min.css";
